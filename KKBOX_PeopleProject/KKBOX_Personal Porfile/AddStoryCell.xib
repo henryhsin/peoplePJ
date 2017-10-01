@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddStoryCell" id="KGk-i7-Jjw" customClass="AddStoryCell" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g4K-Ks-zoP" userLabel="CD Container View" customClass="MaterialView" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="王力宏/專輯名稱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ryx-gW-PKr">
+                                <rect key="frame" x="78" y="41.5" width="230" height="14"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="5ur-rF-Wme"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangTC-Medium" family="PingFang TC" pointSize="12"/>
+                                <color key="textColor" red="0.47058823529411764" green="0.47058823529411764" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="911" translatesAutoresizingMaskIntoConstraints="NO" id="oiT-I6-bze">
+                                <rect key="frame" x="2" y="0.0" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="JZl-WC-tyq"/>
+                                    <constraint firstAttribute="width" constant="65" id="alQ-a5-Ta4"/>
+                                    <constraint firstAttribute="height" constant="65" id="jKg-vv-MZc"/>
+                                    <constraint firstAttribute="height" constant="65" id="zcm-UK-cBq"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="alQ-a5-Ta4"/>
+                                        <exclude reference="zcm-UK-cBq"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌曲" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOV-Y3-19w">
+                                <rect key="frame" x="78" y="8" width="230" height="28"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="P1y-tu-eOR"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="SNY-Sk-Ek0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangTC-Medium" family="PingFang TC" pointSize="14"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="oiT-I6-bze" firstAttribute="top" secondItem="g4K-Ks-zoP" secondAttribute="top" id="0nh-r1-7Bf"/>
+                            <constraint firstItem="oiT-I6-bze" firstAttribute="top" secondItem="g4K-Ks-zoP" secondAttribute="top" id="0y6-Dz-7p0"/>
+                            <constraint firstItem="iOV-Y3-19w" firstAttribute="top" secondItem="g4K-Ks-zoP" secondAttribute="top" constant="8" id="1GM-rN-Z5a"/>
+                            <constraint firstItem="oiT-I6-bze" firstAttribute="top" secondItem="g4K-Ks-zoP" secondAttribute="top" id="3d4-bO-rbm"/>
+                            <constraint firstItem="Ryx-gW-PKr" firstAttribute="leading" secondItem="oiT-I6-bze" secondAttribute="trailing" constant="10" id="7cL-Yd-iF3"/>
+                            <constraint firstItem="oiT-I6-bze" firstAttribute="leading" secondItem="g4K-Ks-zoP" secondAttribute="leading" id="Dc0-t9-Feh"/>
+                            <constraint firstAttribute="bottom" secondItem="oiT-I6-bze" secondAttribute="bottom" constant="0.5" id="GWB-CL-Wfj"/>
+                            <constraint firstAttribute="trailing" secondItem="iOV-Y3-19w" secondAttribute="trailing" constant="12" id="KT4-cO-aV0"/>
+                            <constraint firstAttribute="bottom" secondItem="Ryx-gW-PKr" secondAttribute="bottom" constant="9" id="NR1-sr-aoF"/>
+                            <constraint firstAttribute="trailing" secondItem="Ryx-gW-PKr" secondAttribute="trailing" constant="12" id="U4i-yt-g4T"/>
+                            <constraint firstItem="oiT-I6-bze" firstAttribute="leading" secondItem="g4K-Ks-zoP" secondAttribute="leading" constant="2" id="ctJ-8U-phf"/>
+                            <constraint firstItem="Ryx-gW-PKr" firstAttribute="leading" secondItem="oiT-I6-bze" secondAttribute="trailing" constant="11" id="fND-zU-l73"/>
+                            <constraint firstItem="iOV-Y3-19w" firstAttribute="leading" secondItem="oiT-I6-bze" secondAttribute="trailing" constant="11" id="fkJ-0S-FWI"/>
+                            <constraint firstAttribute="trailing" secondItem="iOV-Y3-19w" secondAttribute="trailing" id="kgu-Ts-F0H"/>
+                            <constraint firstAttribute="bottom" secondItem="Ryx-gW-PKr" secondAttribute="bottom" id="mky-35-AVs"/>
+                            <constraint firstAttribute="bottom" secondItem="oiT-I6-bze" secondAttribute="bottom" id="y5Q-vi-3bS"/>
+                            <constraint firstItem="Ryx-gW-PKr" firstAttribute="top" secondItem="iOV-Y3-19w" secondAttribute="bottom" id="zQp-ly-g2f"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0nh-r1-7Bf"/>
+                                <exclude reference="0y6-Dz-7p0"/>
+                                <exclude reference="Dc0-t9-Feh"/>
+                                <exclude reference="GWB-CL-Wfj"/>
+                                <exclude reference="y5Q-vi-3bS"/>
+                                <exclude reference="kgu-Ts-F0H"/>
+                                <exclude reference="7cL-Yd-iF3"/>
+                                <exclude reference="mky-35-AVs"/>
+                                <exclude reference="zQp-ly-g2f"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="g4K-Ks-zoP" secondAttribute="trailing" id="L9w-tt-HJA"/>
+                    <constraint firstItem="g4K-Ks-zoP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hjv-yb-eUs"/>
+                    <constraint firstItem="g4K-Ks-zoP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qSG-Pq-sgQ"/>
+                    <constraint firstAttribute="bottom" secondItem="g4K-Ks-zoP" secondAttribute="bottom" id="zp0-yr-ITQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="artistNameAndAlbumNameLabel" destination="Ryx-gW-PKr" id="xKl-f9-QNE"/>
+                <outlet property="coverImg" destination="oiT-I6-bze" id="1v2-dg-Nlr"/>
+                <outlet property="songNameLabel" destination="iOV-Y3-19w" id="yi8-fC-neL"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="911" width="26" height="26"/>
+    </resources>
+</document>

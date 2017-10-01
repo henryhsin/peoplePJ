@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommentVC" customModule="KKBOX_Personal_Porfile" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentSecondHeaderViewCell" id="UC3-oP-aYQ" customClass="CommentSecondHeaderViewCell" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UC3-oP-aYQ" id="FGc-ra-k5p">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="其他回應 ( 5 )" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37X-j4-rSM">
+                        <rect key="frame" x="18" y="13" width="284" height="17"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="37X-j4-rSM" secondAttribute="trailing" constant="18" id="Jx4-gk-1Hf"/>
+                    <constraint firstAttribute="trailing" secondItem="37X-j4-rSM" secondAttribute="trailing" constant="18" id="R74-jy-zHY"/>
+                    <constraint firstItem="37X-j4-rSM" firstAttribute="centerY" secondItem="FGc-ra-k5p" secondAttribute="centerY" id="SJC-OC-6OL"/>
+                    <constraint firstItem="37X-j4-rSM" firstAttribute="leading" secondItem="FGc-ra-k5p" secondAttribute="leading" constant="18" id="WYH-QP-fSX"/>
+                    <constraint firstItem="37X-j4-rSM" firstAttribute="leading" secondItem="FGc-ra-k5p" secondAttribute="leadingMargin" constant="18" id="ge0-SC-du7"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Jx4-gk-1Hf"/>
+                        <exclude reference="ge0-SC-du7"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="anotherComments" destination="37X-j4-rSM" id="eld-Q9-wwF"/>
+            </connections>
+            <point key="canvasLocation" x="226" y="378"/>
+        </tableViewCell>
+    </objects>
+</document>

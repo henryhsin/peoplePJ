@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedVC">
+            <connections>
+                <outlet property="hideView" destination="jrZ-Dk-tEo" id="GJb-iN-AFc"/>
+                <outlet property="segmentedControlOutlet" destination="wqE-HJ-VIu" id="yW7-oE-MNS"/>
+                <outlet property="spinner" destination="uY7-5h-nXm" id="eK5-lp-ZSh"/>
+                <outlet property="tableView" destination="lcy-E2-c5y" id="xbw-ji-bgv"/>
+                <outlet property="view" destination="QnP-e7-R2F" id="CIL-QO-qbE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="QnP-e7-R2F">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tabBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="akz-J3-l9P">
+                    <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="sbh-xh-VlL"/>
+                    </constraints>
+                    <items>
+                        <tabBarItem systemItem="favorites" id="hgV-L5-dzt"/>
+                        <tabBarItem systemItem="more" id="lER-Hf-hT8"/>
+                    </items>
+                </tabBar>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wqE-HJ-VIu" customClass="ProfileSegmentedControl" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="64" width="320" height="45"/>
+                    <color key="backgroundColor" red="0.078431372550000003" green="0.62745098040000002" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="ALJ-Nl-pGW"/>
+                    </constraints>
+                    <segments>
+                        <segment title="關注中"/>
+                        <segment title="探索"/>
+                    </segments>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="segmentedControlIndexChanged:" destination="-1" eventType="valueChanged" id="CZX-c9-egd"/>
+                    </connections>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="211" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lcy-E2-c5y">
+                    <rect key="frame" x="10" y="108" width="300" height="410"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="296" id="5sJ-Rd-35w"/>
+                    </constraints>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="5sJ-Rd-35w"/>
+                        </mask>
+                    </variation>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lcy-E2-c5y" firstAttribute="leading" secondItem="QnP-e7-R2F" secondAttribute="leading" constant="10" id="73F-7U-1P3"/>
+                <constraint firstAttribute="trailing" secondItem="lcy-E2-c5y" secondAttribute="trailing" constant="10" id="Dak-tW-NPY"/>
+                <constraint firstItem="wqE-HJ-VIu" firstAttribute="top" secondItem="QnP-e7-R2F" secondAttribute="top" constant="64" id="Lrm-v9-8ja"/>
+                <constraint firstItem="akz-J3-l9P" firstAttribute="leading" secondItem="QnP-e7-R2F" secondAttribute="leading" id="PjA-h4-Tyg"/>
+                <constraint firstItem="lcy-E2-c5y" firstAttribute="top" secondItem="wqE-HJ-VIu" secondAttribute="bottom" id="SpB-Mx-GNM"/>
+                <constraint firstAttribute="trailing" secondItem="akz-J3-l9P" secondAttribute="trailing" id="V6d-sd-ydG"/>
+                <constraint firstItem="akz-J3-l9P" firstAttribute="top" secondItem="lcy-E2-c5y" secondAttribute="bottom" id="bRU-Wd-SI0"/>
+                <constraint firstItem="wqE-HJ-VIu" firstAttribute="leading" secondItem="QnP-e7-R2F" secondAttribute="leading" id="fHb-P9-7t3"/>
+                <constraint firstAttribute="bottom" secondItem="akz-J3-l9P" secondAttribute="bottom" id="kw9-le-RnX"/>
+                <constraint firstAttribute="trailing" secondItem="wqE-HJ-VIu" secondAttribute="trailing" id="oZY-04-rGP"/>
+            </constraints>
+            <point key="canvasLocation" x="147" y="-80"/>
+        </view>
+        <view contentMode="scaleToFill" id="jrZ-Dk-tEo">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="uY7-5h-nXm">
+                    <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uY7-5h-nXm" firstAttribute="centerX" secondItem="jrZ-Dk-tEo" secondAttribute="centerX" id="HAP-Xg-9eH"/>
+                <constraint firstItem="uY7-5h-nXm" firstAttribute="centerY" secondItem="jrZ-Dk-tEo" secondAttribute="centerY" id="HZj-2b-gGz"/>
+            </constraints>
+            <point key="canvasLocation" x="-332" y="-102"/>
+        </view>
+    </objects>
+</document>

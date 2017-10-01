@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlaylistTableViewCell" rowHeight="65" id="k1v-Ve-ayG" customClass="PlaylistTableViewCell" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k1v-Ve-ayG" id="TPN-1V-KSF">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vK6-cf-5rq">
+                        <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="65" id="KVN-89-IZf"/>
+                            <constraint firstAttribute="width" constant="65" id="v58-62-Huu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qy1-66-2RD">
+                        <rect key="frame" x="73" y="8" width="214" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="o2Q-fj-6hE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="♡  37人收藏" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VO3-pc-ULQ">
+                        <rect key="frame" x="73" y="36" width="214" height="20"/>
+                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="12"/>
+                        <color key="textColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qy1-66-2RD" firstAttribute="top" secondItem="TPN-1V-KSF" secondAttribute="top" constant="8" id="2zK-Nf-bee"/>
+                    <constraint firstItem="vK6-cf-5rq" firstAttribute="leading" secondItem="TPN-1V-KSF" secondAttribute="leading" id="7P7-di-SPd"/>
+                    <constraint firstItem="VO3-pc-ULQ" firstAttribute="width" secondItem="qy1-66-2RD" secondAttribute="width" id="7jn-gB-usv"/>
+                    <constraint firstAttribute="trailing" secondItem="qy1-66-2RD" secondAttribute="trailing" id="FBr-Dn-AlR"/>
+                    <constraint firstItem="vK6-cf-5rq" firstAttribute="top" secondItem="TPN-1V-KSF" secondAttribute="top" id="Mrh-8Q-KbK"/>
+                    <constraint firstAttribute="bottom" secondItem="vK6-cf-5rq" secondAttribute="bottom" id="RuL-up-cWD"/>
+                    <constraint firstItem="VO3-pc-ULQ" firstAttribute="top" secondItem="qy1-66-2RD" secondAttribute="bottom" constant="3" id="a7b-dr-NGz"/>
+                    <constraint firstItem="qy1-66-2RD" firstAttribute="leading" secondItem="vK6-cf-5rq" secondAttribute="trailing" constant="8" id="gcd-mo-dga"/>
+                    <constraint firstItem="VO3-pc-ULQ" firstAttribute="leading" secondItem="qy1-66-2RD" secondAttribute="leading" id="pwc-Ck-JI2"/>
+                    <constraint firstAttribute="bottom" secondItem="VO3-pc-ULQ" secondAttribute="bottom" constant="8" id="qTE-nC-kfy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="numberOfCollectedLabel" destination="VO3-pc-ULQ" id="qad-U7-7jE"/>
+                <outlet property="playlistImageView" destination="vK6-cf-5rq" id="RIn-eK-aAW"/>
+                <outlet property="playlistNameLabel" destination="qy1-66-2RD" id="wYv-Ip-31h"/>
+            </connections>
+            <point key="canvasLocation" x="524" y="254.5"/>
+        </tableViewCell>
+    </objects>
+</document>

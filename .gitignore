@@ -1,0 +1,64 @@
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# Folders
+_obj
+_test
+
+# Architecture specific extensions/prefixes
+*.[568vq]
+[568vq].out
+
+*.cgo1.go
+*.cgo2.c
+_cgo_defun.c
+_cgo_gotypes.go
+_cgo_export.*
+
+_testmain.go
+
+*.exe
+*.test
+*.prof
+
+# WebStorm
+*.iml
+
+# Directory-based project format:
+.idea/
+.idea/workspace.xml
+**/.idea/workspace.xml
+
+# mac hidden files
+.DS_Store
+
+#other
+node_modules/
+bower_components/
+.tmp
+.sass-cache
+builds/**/images/*
+*.ogg
+*.mp3
+*.mp4
+*.png
+*.jpeg
+
+# security / ssl
+*.pem
+*.xxjson
+
+#忽略.DS_Store目录下的所有文件
+.DS_Store
+#忽略node_modules目录下的所有文件
+node_modules
+npm-debug.log
+#仅仅忽略 demo/.svn文件
+demo/.svn/
+.sass-cache
+#忽略所有以.swp结尾的文件
+*.swp
+.sw*
+.idea/*

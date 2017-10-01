@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectedAlbumCollectionViewCell" id="Wts-RX-Y7a" customClass="CollectedAlbumCollectionViewCell" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="147"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="147"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IzY-8I-boO">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="K9B-5x-ZQv"/>
+                            <constraint firstAttribute="width" constant="100" id="Z8U-FC-I2G"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43I-w3-aXA">
+                        <rect key="frame" x="8" y="104" width="84" height="24"/>
+                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INp-w6-suR">
+                        <rect key="frame" x="60" y="61" width="32" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33" id="bd8-tu-1Qo"/>
+                            <constraint firstAttribute="width" constant="32" id="vUe-Eb-VXs"/>
+                        </constraints>
+                        <state key="normal" image="btn_play_card"/>
+                        <connections>
+                            <action selector="playButtonTapped:" destination="Wts-RX-Y7a" eventType="touchUpInside" id="KTG-Oq-AFq"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZW-6x-CBc">
+                        <rect key="frame" x="8" y="129" width="84" height="17"/>
+                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="12"/>
+                        <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fZW-6x-CBc" firstAttribute="leading" secondItem="Wts-RX-Y7a" secondAttribute="leading" constant="8" id="01V-fn-oZQ"/>
+                <constraint firstItem="43I-w3-aXA" firstAttribute="top" secondItem="IzY-8I-boO" secondAttribute="bottom" constant="4" id="08f-qf-kyA"/>
+                <constraint firstAttribute="trailing" secondItem="fZW-6x-CBc" secondAttribute="trailing" constant="8" id="0BJ-Ol-rS5"/>
+                <constraint firstItem="43I-w3-aXA" firstAttribute="leading" secondItem="Wts-RX-Y7a" secondAttribute="leading" constant="8" id="0nu-fo-KmJ"/>
+                <constraint firstAttribute="trailing" secondItem="43I-w3-aXA" secondAttribute="trailing" constant="8" id="313-00-M0i"/>
+                <constraint firstItem="IzY-8I-boO" firstAttribute="top" secondItem="Wts-RX-Y7a" secondAttribute="top" id="9NX-VO-pjx"/>
+                <constraint firstItem="fZW-6x-CBc" firstAttribute="top" secondItem="43I-w3-aXA" secondAttribute="bottom" constant="1" id="E5j-we-sqi"/>
+                <constraint firstItem="43I-w3-aXA" firstAttribute="top" secondItem="INp-w6-suR" secondAttribute="bottom" constant="10" id="Gjw-9q-yOv"/>
+                <constraint firstAttribute="trailing" secondItem="IzY-8I-boO" secondAttribute="trailing" id="S6J-OF-6TG"/>
+                <constraint firstItem="IzY-8I-boO" firstAttribute="leading" secondItem="Wts-RX-Y7a" secondAttribute="leading" id="WSA-91-tOo"/>
+                <constraint firstAttribute="trailing" secondItem="INp-w6-suR" secondAttribute="trailing" constant="8" id="fVx-Wx-Mte"/>
+                <constraint firstAttribute="bottom" secondItem="fZW-6x-CBc" secondAttribute="bottom" constant="1" id="kEZ-rR-Yw2"/>
+            </constraints>
+            <size key="customSize" width="157" height="207"/>
+            <connections>
+                <outlet property="albumLabel" destination="43I-w3-aXA" id="8OE-0g-9xr"/>
+                <outlet property="artistLabel" destination="fZW-6x-CBc" id="Vew-88-TJK"/>
+                <outlet property="imageView" destination="IzY-8I-boO" id="Ipp-Z7-CN4"/>
+            </connections>
+            <point key="canvasLocation" x="530" y="384.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="btn_play_card" width="34" height="35"/>
+    </resources>
+</document>

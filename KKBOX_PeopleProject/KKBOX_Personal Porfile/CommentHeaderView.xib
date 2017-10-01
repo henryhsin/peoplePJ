@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view alpha="0.5" contentMode="scaleToFill" id="iN0-l3-epB" customClass="CommentHeaderView" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKK-9r-TQk" customClass="MateriaView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PXj-2n-jLR">
+                            <rect key="frame" x="0.0" y="49" width="320" height="1"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Kdi-jC-hvj"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mN9-G8-1sR">
+                            <rect key="frame" x="29" y="12" width="26" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="26" id="oXW-0Q-qm9"/>
+                                <constraint firstAttribute="height" constant="26" id="syH-6R-HR9"/>
+                            </constraints>
+                            <state key="normal" image="btn_play_black"/>
+                        </button>
+                        <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2V6-sz-qck">
+                            <rect key="frame" x="68" y="0.0" width="252" height="49"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌曲" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7D3-tE-U9X" customClass="MaterialLabel" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="6" width="252" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="18" id="g4j-PW-smF"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="PingFangTC-Medium" family="PingFang TC" pointSize="14"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="王力宏/專輯名稱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mT-mu-UhG" customClass="MaterialLabel" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="28" width="252" height="14"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="14" id="Hxz-GT-IlR"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="PingFangTC-Medium" family="PingFang TC" pointSize="14"/>
+                                    <color key="textColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="7D3-tE-U9X" firstAttribute="top" secondItem="2V6-sz-qck" secondAttribute="top" constant="6" id="2FZ-XW-uIC"/>
+                                <constraint firstAttribute="trailing" secondItem="5mT-mu-UhG" secondAttribute="trailing" id="8ou-Po-saT"/>
+                                <constraint firstItem="5mT-mu-UhG" firstAttribute="leading" secondItem="2V6-sz-qck" secondAttribute="leading" id="QAh-Ki-3SD"/>
+                                <constraint firstItem="7D3-tE-U9X" firstAttribute="leading" secondItem="2V6-sz-qck" secondAttribute="leading" id="RCt-vX-ste"/>
+                                <constraint firstAttribute="bottom" secondItem="5mT-mu-UhG" secondAttribute="bottom" constant="7" id="ikr-j7-aOS"/>
+                                <constraint firstAttribute="trailing" secondItem="7D3-tE-U9X" secondAttribute="trailing" id="tn8-lX-LhS"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="PXj-2n-jLR" secondAttribute="trailing" id="Nvd-4H-dlO"/>
+                        <constraint firstAttribute="trailing" secondItem="2V6-sz-qck" secondAttribute="trailing" id="Pvk-cW-5TP"/>
+                        <constraint firstAttribute="bottom" secondItem="2V6-sz-qck" secondAttribute="bottom" constant="1" id="UWQ-oy-607"/>
+                        <constraint firstAttribute="bottom" secondItem="PXj-2n-jLR" secondAttribute="bottom" id="ctu-Tj-k1T"/>
+                        <constraint firstItem="mN9-G8-1sR" firstAttribute="leading" secondItem="AKK-9r-TQk" secondAttribute="leading" constant="29" id="fK6-Lh-MsJ"/>
+                        <constraint firstItem="2V6-sz-qck" firstAttribute="leading" secondItem="mN9-G8-1sR" secondAttribute="trailing" constant="13" id="lci-Ll-WxQ"/>
+                        <constraint firstItem="2V6-sz-qck" firstAttribute="top" secondItem="AKK-9r-TQk" secondAttribute="top" id="oba-eF-M4m"/>
+                        <constraint firstItem="mN9-G8-1sR" firstAttribute="centerY" secondItem="AKK-9r-TQk" secondAttribute="centerY" id="sFY-7D-1oR"/>
+                        <constraint firstItem="PXj-2n-jLR" firstAttribute="leading" secondItem="AKK-9r-TQk" secondAttribute="leading" id="zq1-6m-GAZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.81568646430969238" green="0.59607851505279541" blue="0.29019609093666077" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AKK-9r-TQk" secondAttribute="trailing" id="Eow-9x-GFB"/>
+                <constraint firstAttribute="bottom" secondItem="AKK-9r-TQk" secondAttribute="bottom" id="XpX-Kt-Ytl"/>
+                <constraint firstItem="AKK-9r-TQk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="baH-4U-X6n"/>
+                <constraint firstItem="AKK-9r-TQk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="edT-sK-tbb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="artistNameAndAlbumNameLabel" destination="5mT-mu-UhG" id="rbk-0Z-YAW"/>
+                <outlet property="backgroundView" destination="PXj-2n-jLR" id="1zH-QG-gUZ"/>
+                <outlet property="playBtn" destination="mN9-G8-1sR" id="XEL-62-vh2"/>
+                <outlet property="songName" destination="7D3-tE-U9X" id="7XE-hv-c6J"/>
+            </connections>
+            <point key="canvasLocation" x="79" y="119"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_play_black" width="30" height="30"/>
+    </resources>
+</document>

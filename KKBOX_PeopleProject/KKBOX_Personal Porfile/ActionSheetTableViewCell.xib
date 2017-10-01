@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActionSheetTableViewCell" id="VXg-2p-aLu" customClass="ActionSheetTableViewCell" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VXg-2p-aLu" id="fQD-R5-ni8">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdt-xb-PC1">
+                        <rect key="frame" x="78" y="19" width="226" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="Q21-8Y-T68"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.30588235289999999" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ia4-HC-9Qo">
+                        <rect key="frame" x="24" y="13" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="nNx-lr-yft"/>
+                            <constraint firstAttribute="height" constant="30" id="raO-eF-GZi"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="Ia4-HC-9Qo" firstAttribute="centerY" secondItem="fQD-R5-ni8" secondAttribute="centerY" id="0tK-P2-RmM"/>
+                    <constraint firstItem="Rdt-xb-PC1" firstAttribute="centerY" secondItem="fQD-R5-ni8" secondAttribute="centerY" id="1GT-vf-R0O"/>
+                    <constraint firstItem="Ia4-HC-9Qo" firstAttribute="leading" secondItem="fQD-R5-ni8" secondAttribute="leadingMargin" constant="16" id="Z5z-oQ-cLA"/>
+                    <constraint firstItem="Rdt-xb-PC1" firstAttribute="leading" secondItem="Ia4-HC-9Qo" secondAttribute="trailing" constant="24" id="emL-11-oga"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Rdt-xb-PC1" secondAttribute="trailing" constant="8" id="z8R-4Q-cWx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="iconimageView" destination="Ia4-HC-9Qo" id="lsF-yY-M80"/>
+                <outlet property="nameLabel" destination="Rdt-xb-PC1" id="Eeu-Yd-hHR"/>
+            </connections>
+            <point key="canvasLocation" x="578" y="328"/>
+        </tableViewCell>
+    </objects>
+</document>

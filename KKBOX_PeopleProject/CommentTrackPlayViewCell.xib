@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommentVC" customModule="KKBOX_Personal_Porfile" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" alpha="0.20000000000000001" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentTrackPlayViewCell" id="XfN-v4-vw1" customClass="CommentTrackPlayViewCell" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="263"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XfN-v4-vw1" id="JdE-Ty-VOb">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="262.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MyB-zb-2Fs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="262.5"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpX-Vf-SeE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="262.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="zrX-8I-D8g">
+                                <rect key="frame" x="92" y="188" width="137" height="39"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌曲" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKm-bT-4cs" customClass="MaterialLabel" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="137" height="18"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="NZr-os-FwR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="王力宏/專輯名稱" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkI-2B-1G8" customClass="MaterialLabel" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="25" width="137" height="14"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14" id="97A-d1-jpT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Light" family="PingFang TC" pointSize="12"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="rkI-2B-1G8" secondAttribute="trailing" id="Cep-c6-mAC"/>
+                                    <constraint firstItem="RKm-bT-4cs" firstAttribute="leading" secondItem="zrX-8I-D8g" secondAttribute="leading" id="FZu-kr-vVp"/>
+                                    <constraint firstItem="rkI-2B-1G8" firstAttribute="leading" secondItem="zrX-8I-D8g" secondAttribute="leading" id="qjB-TN-c5m"/>
+                                    <constraint firstAttribute="trailing" secondItem="RKm-bT-4cs" secondAttribute="trailing" id="sQ3-xR-64v"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bs-1F-2ax">
+                                <rect key="frame" x="268" y="30" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="Xi5-vy-5Lo"/>
+                                    <constraint firstAttribute="width" constant="26" id="r3a-tK-wp6"/>
+                                </constraints>
+                                <state key="normal" image="icon_more_nowPlaying"/>
+                                <connections>
+                                    <action selector="goToPlayMoreVC:" destination="-1" eventType="touchUpInside" id="emA-hb-Foh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3Bs-1F-2ax" secondAttribute="trailing" constant="26" id="5vT-uw-ggk"/>
+                            <constraint firstItem="3Bs-1F-2ax" firstAttribute="top" secondItem="wpX-Vf-SeE" secondAttribute="top" constant="30" id="ElY-bO-osO"/>
+                            <constraint firstItem="zrX-8I-D8g" firstAttribute="leading" secondItem="wpX-Vf-SeE" secondAttribute="leading" constant="91.5" id="gRi-KI-I3e"/>
+                            <constraint firstAttribute="trailing" secondItem="zrX-8I-D8g" secondAttribute="trailing" constant="91.5" id="sav-jr-YpL"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YqF-uI-F5U">
+                        <rect key="frame" x="88" y="38" width="145" height="145"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="145" id="AN6-dG-UJB"/>
+                            <constraint firstAttribute="width" constant="145" id="TqZ-2A-fJm"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="zrX-8I-D8g" firstAttribute="top" secondItem="YqF-uI-F5U" secondAttribute="bottom" constant="5" id="2Bf-4O-6y7"/>
+                    <constraint firstItem="MyB-zb-2Fs" firstAttribute="leading" secondItem="JdE-Ty-VOb" secondAttribute="leading" id="7zJ-25-TkT"/>
+                    <constraint firstAttribute="trailing" secondItem="wpX-Vf-SeE" secondAttribute="trailing" id="BLN-nC-y7N"/>
+                    <constraint firstItem="wpX-Vf-SeE" firstAttribute="leading" secondItem="JdE-Ty-VOb" secondAttribute="leading" id="Bdv-bc-xnl"/>
+                    <constraint firstAttribute="bottom" secondItem="wpX-Vf-SeE" secondAttribute="bottom" id="Cfh-oR-zan"/>
+                    <constraint firstItem="YqF-uI-F5U" firstAttribute="top" secondItem="JdE-Ty-VOb" secondAttribute="topMargin" constant="30" id="Ojt-qM-vAt"/>
+                    <constraint firstItem="wpX-Vf-SeE" firstAttribute="top" secondItem="JdE-Ty-VOb" secondAttribute="top" id="Vde-Ap-hjL"/>
+                    <constraint firstItem="MyB-zb-2Fs" firstAttribute="top" secondItem="JdE-Ty-VOb" secondAttribute="top" id="WDA-xm-Y3S"/>
+                    <constraint firstAttribute="bottom" secondItem="MyB-zb-2Fs" secondAttribute="bottom" id="cI2-A9-uSw"/>
+                    <constraint firstAttribute="trailing" secondItem="MyB-zb-2Fs" secondAttribute="trailing" id="d6L-EB-NbD"/>
+                    <constraint firstItem="YqF-uI-F5U" firstAttribute="centerX" secondItem="JdE-Ty-VOb" secondAttribute="centerX" id="qjN-1E-u0e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="artistNameAndAlbumNameLabel" destination="rkI-2B-1G8" id="8Ne-1W-7xv"/>
+                <outlet property="backGroundView" destination="JdE-Ty-VOb" id="6p4-Dt-24P"/>
+                <outlet property="backgroundBlakBlurView" destination="wpX-Vf-SeE" id="eec-pZ-R9C"/>
+                <outlet property="backgroundImgView" destination="MyB-zb-2Fs" id="nQO-UE-fdO"/>
+                <outlet property="foregroundImgView" destination="YqF-uI-F5U" id="gCQ-m0-965"/>
+                <outlet property="songName" destination="RKm-bT-4cs" id="Ovj-Ax-Tc4"/>
+            </connections>
+            <point key="canvasLocation" x="202" y="126"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_more_nowPlaying" width="32" height="32"/>
+    </resources>
+</document>

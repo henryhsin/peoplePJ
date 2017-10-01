@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
+            <connections>
+                <outlet property="loginButton" destination="HjU-LD-J3a" id="X82-D3-kLC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="Hdr-Ys-5Mq">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQA-Ha-TNO">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="FcK-kw-ehl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="dark"/>
+                </visualEffectView>
+                <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjU-LD-J3a">
+                    <rect key="frame" x="175" y="124" width="250" height="30"/>
+                    <color key="backgroundColor" red="0.10980392160000001" green="0.68235294120000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="SAQ-B8-92N"/>
+                        <constraint firstAttribute="height" constant="30" id="Ykm-ON-Jc9"/>
+                    </constraints>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="loginButtonTapped:" destination="-1" eventType="touchUpInside" id="HX5-Zl-frU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Hdr-Ys-5Mq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="70T-Sq-blB"/>
+                <constraint firstItem="HjU-LD-J3a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="124" id="9ua-Tm-c8q"/>
+                <constraint firstItem="bQA-Ha-TNO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="C3P-tc-Ohv"/>
+                <constraint firstAttribute="bottom" secondItem="Hdr-Ys-5Mq" secondAttribute="bottom" id="ED3-go-jh9"/>
+                <constraint firstAttribute="bottom" secondItem="bQA-Ha-TNO" secondAttribute="bottom" id="WtC-97-hfA"/>
+                <constraint firstItem="bQA-Ha-TNO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fLX-Ba-0We"/>
+                <constraint firstItem="Hdr-Ys-5Mq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fYU-jg-o3j"/>
+                <constraint firstAttribute="trailing" secondItem="bQA-Ha-TNO" secondAttribute="trailing" id="hCP-e6-S3E"/>
+                <constraint firstAttribute="trailing" secondItem="Hdr-Ys-5Mq" secondAttribute="trailing" id="pqb-Y2-BPd"/>
+                <constraint firstItem="HjU-LD-J3a" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tfb-Ca-9zX"/>
+            </constraints>
+            <point key="canvasLocation" x="492" y="432"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_background" width="664" height="400"/>
+    </resources>
+</document>

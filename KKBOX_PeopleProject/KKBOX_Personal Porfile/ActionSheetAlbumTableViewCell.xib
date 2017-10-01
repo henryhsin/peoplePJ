@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ActionSheetAlbumTableViewCell" rowHeight="65" id="can-yQ-a24" customClass="ActionSheetAlbumTableViewCell" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="can-yQ-a24" id="3To-V7-MIe">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Tl-kz-1ya">
+                        <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="65" id="SCW-TR-t5G"/>
+                            <constraint firstAttribute="width" constant="65" id="uML-lT-8AN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGH-C7-GKl">
+                        <rect key="frame" x="73" y="8" width="247" height="20"/>
+                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="12"/>
+                        <color key="textColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwP-9X-5re">
+                        <rect key="frame" x="73" y="31" width="247" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="BWW-av-5zs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AGH-C7-GKl" firstAttribute="leading" secondItem="3Tl-kz-1ya" secondAttribute="trailing" constant="8" id="0nt-Xt-jbG"/>
+                    <constraint firstAttribute="bottom" secondItem="3Tl-kz-1ya" secondAttribute="bottom" id="3RC-1f-363"/>
+                    <constraint firstItem="LwP-9X-5re" firstAttribute="width" secondItem="AGH-C7-GKl" secondAttribute="width" id="MpQ-cl-Vat"/>
+                    <constraint firstItem="3Tl-kz-1ya" firstAttribute="top" secondItem="3To-V7-MIe" secondAttribute="top" id="Zgg-9a-5Q9"/>
+                    <constraint firstItem="3Tl-kz-1ya" firstAttribute="leading" secondItem="3To-V7-MIe" secondAttribute="leading" id="cuN-uu-6Mr"/>
+                    <constraint firstItem="LwP-9X-5re" firstAttribute="leading" secondItem="AGH-C7-GKl" secondAttribute="leading" id="dWA-KS-mVS"/>
+                    <constraint firstItem="AGH-C7-GKl" firstAttribute="top" secondItem="3To-V7-MIe" secondAttribute="top" constant="8" id="f4L-tv-D5A"/>
+                    <constraint firstAttribute="bottom" secondItem="LwP-9X-5re" secondAttribute="bottom" constant="8" id="jfv-oB-q8X"/>
+                    <constraint firstItem="LwP-9X-5re" firstAttribute="top" secondItem="AGH-C7-GKl" secondAttribute="bottom" constant="3" id="pw7-U2-cUT"/>
+                    <constraint firstAttribute="trailing" secondItem="AGH-C7-GKl" secondAttribute="trailing" id="u91-F0-FIc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="nameLabel" destination="LwP-9X-5re" id="oB3-hj-eor"/>
+                <outlet property="photoImageView" destination="3Tl-kz-1ya" id="yEV-6f-LdF"/>
+                <outlet property="viceNameLabel" destination="AGH-C7-GKl" id="jIY-OB-RoE"/>
+            </connections>
+            <point key="canvasLocation" x="524" y="254.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,15 @@
+PODS:
+  - Alamofire (3.4.1)
+  - HanekeSwift (0.10.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.4)
+  - HanekeSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
+
+PODFILE CHECKSUM: faef8c9f39f5e77472cbeb1141a2a0dbf4ab3df9
+
+COCOAPODS: 1.0.1

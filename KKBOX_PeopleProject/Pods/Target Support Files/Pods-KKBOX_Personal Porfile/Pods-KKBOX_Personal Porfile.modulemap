@@ -1,0 +1,6 @@
+framework module Pods_KKBOX_Personal_Porfile {
+  umbrella header "Pods-KKBOX_Personal Porfile-umbrella.h"
+
+  export *
+  module * { export * }
+}

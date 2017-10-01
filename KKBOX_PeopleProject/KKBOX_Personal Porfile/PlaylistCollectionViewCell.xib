@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlaylistCollectionViewCell" id="LXE-Ck-OWg" customClass="PlaylistCollectionViewCell" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="132"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="132"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EJA-bx-v4f">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="HYY-9B-pqw"/>
+                            <constraint firstAttribute="width" constant="100" id="af1-1S-4gq"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A08-sj-iOp">
+                        <rect key="frame" x="8" y="101" width="84" height="26"/>
+                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1b-qR-BdF">
+                        <rect key="frame" x="60" y="61" width="32" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33" id="2hV-xR-0Ud"/>
+                            <constraint firstAttribute="width" constant="32" id="9xS-bE-oGN"/>
+                        </constraints>
+                        <state key="normal" image="btn_play_card"/>
+                        <connections>
+                            <action selector="playButtonTapped:" destination="LXE-Ck-OWg" eventType="touchUpInside" id="tzc-SS-GTd"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="EJA-bx-v4f" firstAttribute="top" secondItem="LXE-Ck-OWg" secondAttribute="top" id="40K-Hi-pHQ"/>
+                <constraint firstAttribute="bottom" secondItem="A08-sj-iOp" secondAttribute="bottom" constant="5" id="DXc-pl-GC0"/>
+                <constraint firstItem="A08-sj-iOp" firstAttribute="top" secondItem="Q1b-qR-BdF" secondAttribute="bottom" constant="7" id="F38-Qm-cNS"/>
+                <constraint firstItem="EJA-bx-v4f" firstAttribute="leading" secondItem="LXE-Ck-OWg" secondAttribute="leading" id="FOp-qd-G53"/>
+                <constraint firstItem="A08-sj-iOp" firstAttribute="top" secondItem="EJA-bx-v4f" secondAttribute="bottom" constant="1" id="Fb5-LK-obI"/>
+                <constraint firstItem="A08-sj-iOp" firstAttribute="leading" secondItem="LXE-Ck-OWg" secondAttribute="leading" constant="8" id="OjS-7o-u0c"/>
+                <constraint firstAttribute="trailing" secondItem="Q1b-qR-BdF" secondAttribute="trailing" constant="8" id="X0U-ih-0c6"/>
+                <constraint firstAttribute="trailing" secondItem="A08-sj-iOp" secondAttribute="trailing" constant="8" id="daX-kj-ovl"/>
+                <constraint firstAttribute="trailing" secondItem="EJA-bx-v4f" secondAttribute="trailing" id="kmq-dJ-4Fe"/>
+            </constraints>
+            <size key="customSize" width="157" height="192"/>
+            <connections>
+                <outlet property="imageView" destination="EJA-bx-v4f" id="QEz-c3-RFI"/>
+                <outlet property="playlistLabel" destination="A08-sj-iOp" id="trA-X1-Siw"/>
+            </connections>
+            <point key="canvasLocation" x="429" y="250"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="btn_play_card" width="34" height="35"/>
+    </resources>
+</document>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlaylistViewController" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="BPo-Pj-xI5" id="GqL-KV-KIR"/>
+                <outlet property="totalPlaylistsLabel" destination="0Se-Mw-akO" id="oNN-N7-Tk4"/>
+                <outlet property="view" destination="VRM-ly-rep" id="qSW-xT-TUk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="VRM-ly-rep">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BPo-Pj-xI5">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                    <color key="backgroundColor" red="0.87843137250000003" green="0.8862745098" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Se-Mw-akO">
+                        <rect key="frame" x="0.0" y="507" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.87843137250000003" green="0.8862745098" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="12"/>
+                        <color key="textColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="VG5-Z3-tjC"/>
+                        <outlet property="delegate" destination="-1" id="ycF-EH-LVm"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.87843137250000003" green="0.8862745098" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BPo-Pj-xI5" secondAttribute="trailing" id="CA8-Mp-8qI"/>
+                <constraint firstAttribute="bottom" secondItem="BPo-Pj-xI5" secondAttribute="bottom" constant="49" id="fNc-0y-CWb"/>
+                <constraint firstItem="BPo-Pj-xI5" firstAttribute="leading" secondItem="VRM-ly-rep" secondAttribute="leading" id="na8-Op-kqN"/>
+                <constraint firstItem="BPo-Pj-xI5" firstAttribute="top" secondItem="VRM-ly-rep" secondAttribute="top" id="weF-Wq-fXr"/>
+            </constraints>
+            <point key="canvasLocation" x="424" y="333"/>
+        </view>
+    </objects>
+</document>

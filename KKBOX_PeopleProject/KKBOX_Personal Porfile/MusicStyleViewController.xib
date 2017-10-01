@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MusicStyleViewController" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
+            <connections>
+                <outlet property="musicStyleSegmentedControl" destination="Kp0-N0-vGs" id="0Rj-pk-Dou"/>
+                <outlet property="tableView" destination="a4a-bP-cwO" id="h7O-E7-62b"/>
+                <outlet property="totalSongsLabel" destination="ueU-kS-MFa" id="9b0-uO-aub"/>
+                <outlet property="view" destination="oxU-zH-35h" id="8AB-xo-Fab"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="oxU-zH-35h">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Kp0-N0-vGs" customClass="ProfileSegmentedControl" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="64" width="600" height="29"/>
+                    <segments>
+                        <segment title="爵士"/>
+                        <segment title="鄉村"/>
+                        <segment title="搖滾"/>
+                    </segments>
+                    <connections>
+                        <action selector="segmentedControlTapped:" destination="-1" eventType="valueChanged" id="HtE-We-ZYm"/>
+                    </connections>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a4a-bP-cwO">
+                    <rect key="frame" x="0.0" y="92" width="600" height="459"/>
+                    <color key="backgroundColor" red="0.87843137250000003" green="0.8862745098" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ueU-kS-MFa">
+                        <rect key="frame" x="0.0" y="415" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.87843137250000003" green="0.8862745098" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="12"/>
+                        <color key="textColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="XVG-FU-4nR"/>
+                        <outlet property="delegate" destination="-1" id="IRt-gx-qXp"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.87843137250000003" green="0.8862745098" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Kp0-N0-vGs" firstAttribute="top" secondItem="oxU-zH-35h" secondAttribute="top" constant="64" id="3Um-r3-Lfc"/>
+                <constraint firstAttribute="trailing" secondItem="a4a-bP-cwO" secondAttribute="trailing" id="ENC-gY-IGJ"/>
+                <constraint firstItem="Kp0-N0-vGs" firstAttribute="centerX" secondItem="oxU-zH-35h" secondAttribute="centerX" id="G9M-PT-YWs"/>
+                <constraint firstItem="a4a-bP-cwO" firstAttribute="top" secondItem="Kp0-N0-vGs" secondAttribute="bottom" id="JVI-AC-d5O"/>
+                <constraint firstAttribute="trailing" secondItem="Kp0-N0-vGs" secondAttribute="trailing" id="O5P-Pe-2Dp"/>
+                <constraint firstAttribute="bottom" secondItem="a4a-bP-cwO" secondAttribute="bottom" constant="49" id="QxQ-Yn-HSA"/>
+                <constraint firstItem="a4a-bP-cwO" firstAttribute="leading" secondItem="oxU-zH-35h" secondAttribute="leading" id="hEg-yC-TR8"/>
+                <constraint firstItem="Kp0-N0-vGs" firstAttribute="leading" secondItem="oxU-zH-35h" secondAttribute="leading" id="hIS-WP-W2n"/>
+            </constraints>
+            <point key="canvasLocation" x="465" y="401"/>
+        </view>
+    </objects>
+</document>
